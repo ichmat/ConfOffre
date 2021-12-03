@@ -1,0 +1,15 @@
+﻿<Application x:Class="ConfOffre.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ConfOffre"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush Color="#0452B3" x:Key="dark_blue" />
+        <SolidColorBrush Color="#2688FF" x:Key="alt_blue" />
+        <SolidColorBrush Color="#0D7AFF" x:Key="main_blue" />
+        <SolidColorBrush Color="#B37400" x:Key="brown" />
+        <SolidColorBrush Color="#FFAA0D" x:Key="yellow" />
+
+    </Application.Resources>
+</Application>

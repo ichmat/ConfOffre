@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ConfOffre.Views.Produits.ViewProduit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ConfOffre.Views.Produits"
+             MouseLeftButtonDown="UserControl_MouseLeftButtonDown"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Margin="15" BorderThickness="0,0,0,2" BorderBrush="{StaticResource alt_blue}" CornerRadius="5" Background="{StaticResource main_blue}" Width="250" Height="150">
+        <Grid Height="150">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Margin="8" CornerRadius="5" Background="White">
+                <TextBlock Text="#NAME" FontSize="20" FontWeight="Bold" x:Name="TB_Produit_Nom" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Border>
+            <TextBlock Grid.Row="1" Text="#DESC" FontSize="16" Margin="5" TextWrapping="WrapWithOverflow" x:Name="TB_Produit_Desc" />
+            <TextBlock Grid.Row="2" HorizontalAlignment="Right" Text="0.00 €" FontWeight="Bold" FontStyle="Italic" FontSize="18" Margin="5" TextWrapping="WrapWithOverflow" x:Name="TB_Produit_Prix" />
+        </Grid>
+    </Border>
+</UserControl>

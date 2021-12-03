@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="ConfOffre.NavBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ConfOffre"
+             MouseEnter="UserControl_MouseEnter"
+             MouseLeave="UserControl_MouseLeave"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Storyboard x:Key="MouseEnterEffect">
+            <DoubleAnimation Duration="0:0:0.3" From="50" To="200" DecelerationRatio="0.5" Storyboard.TargetProperty="Width" Storyboard.TargetName="NB_Border" />
+        </Storyboard>
+        <Storyboard x:Key="MouseLeaveEffect">
+            <DoubleAnimation Duration="0:0:0.3" From="200" To="50" DecelerationRatio="0.5" Storyboard.TargetProperty="Width" Storyboard.TargetName="NB_Border" />
+        </Storyboard>
+    </UserControl.Resources>
+    <Border Width="50" x:Name="NB_Border" Background="#EEE">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel x:Name="SP_Items" Orientation="Vertical">
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</UserControl>
